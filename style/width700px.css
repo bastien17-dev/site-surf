@@ -1,0 +1,86 @@
+header h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 50px;
+}
+
+.side_bar {
+  display: none;
+}
+
+.button {
+  display: none;
+}
+
+.overlay {
+  display: none;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+.menu_list {
+  text-align: center;
+  display: flex;
+  width: 98%;
+  padding-top: 10px;
+  background: none;
+}
+
+.menu_list li {
+  flex-grow: 1;
+  height: 30px;
+}
+
+.menu_list li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 3px;
+}
+
+.menu_list li a:hover {
+  font-size: 1.3em;
+  text-decoration: underline;
+}
+
+.menu_list li:nth-child(-n + 4) {
+  border-right: 2px solid #000000c6;
+}
+
+/* ABOUT */
+
+.about_illustration {
+  display: block;
+  width: 100%;
+  margin-top: 15px;
+  transform: translateX(60%);
+  opacity: 0;
+  transition: transform 1s ease 0.2s, opacity 1s ease 0.2s;
+}
+
+.about_illustration.appear {
+  transform: none;
+  opacity: 1;
+}
+
+.about_image {
+  width: 100%;
+}
+
+/* TEAM */
+
+.school_team {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr 1fr;
+  grid-template-areas: "h2 h2 h2" "bast kelly laird" "surfeuse jerem mj" "tony tom .";
+}

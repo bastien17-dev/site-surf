@@ -1,0 +1,22 @@
+.about {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-template-rows: 100px 750px;
+  grid-template-areas: "h h" "p i";
+  grid-gap: 30px;
+}
+
+.about_title {
+  grid-area: h;
+  place-self: center;
+}
+
+.about_p {
+  grid-area: p;
+  align-self: start;
+}
+
+.about_illustration {
+  grid-area: i;
+  align-self: end;
+}

@@ -1,0 +1,14 @@
+header h1 {
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 60px;
+}
+/* TEAM */
+
+.school_team {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100px 1fr 1fr;
+  grid-template-areas: "h2 h2 h2 h2" "bast kelly laird surfeuse" "jerem mj tony tom";
+}
