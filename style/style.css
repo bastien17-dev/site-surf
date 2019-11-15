@@ -80,7 +80,7 @@ h3 {
 }
 
 .button {
-  position: relative;
+  position: fixed;
   width: 100%;
   text-align: right;
   z-index: 20;
@@ -152,7 +152,6 @@ h3 {
 }
 
 .activated .button_cross {
-  position: fixed;
   visibility: visible;
 }
 
@@ -210,7 +209,7 @@ h3 {
   background-color: #f4c5b0;
   transform: translateX(-60%);
   opacity: 0;
-  transition: transform 1s ease 0.3s, opacity 1s ease 0.3s;
+  transition: transform 1s ease, opacity 1s ease;
 }
 
 .separation.appear {

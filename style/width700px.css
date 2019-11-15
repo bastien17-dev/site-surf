@@ -65,7 +65,7 @@ h2 {
   margin-top: 15px;
   transform: translateX(60%);
   opacity: 0;
-  transition: transform 1s ease 0.2s, opacity 1s ease 0.2s;
+  transition: transform 1s ease, opacity 1s ease;
 }
 
 .about_illustration.appear {
