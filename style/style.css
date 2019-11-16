@@ -203,7 +203,7 @@ h3 {
 }
 
 .about_title {
-  transform: translateX(-80%);
+  transform: translateY(60%);
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
 }
@@ -218,9 +218,9 @@ h3 {
   text-align: justify;
   padding-top: 20px;
   line-height: 30px;
-  transform: translateX(-60%);
+  transform: translateY(10%);
   opacity: 0;
-  transition: transform 1s ease 0.1s, opacity 1s ease 0.1s;
+  transition: transform 1s ease 0.2s, opacity 1s ease 0.1s;
 }
 
 .about_p.appear {

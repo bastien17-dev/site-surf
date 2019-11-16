@@ -74,6 +74,13 @@ h2 {
 }
 
 /* ABOUT */
+.about_title {
+  transform: translateX(-60%);
+}
+
+.about_p {
+  transform: translate(-80%);
+}
 
 .about_illustration {
   display: block;
