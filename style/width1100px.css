@@ -1,3 +1,19 @@
+@keyframes arrow1100 {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(280px);
+    opacity: 1;
+  }
+}
+
+.arrow-down {
+  width: 40px;
+  animation: 2s ease-out 0s infinite arrow1100;
+}
+
 .about {
   display: grid;
   grid-template-columns: 0.5fr 1fr;

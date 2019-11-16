@@ -1,3 +1,19 @@
+@keyframes arrow700 {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(150px);
+    opacity: 1;
+  }
+}
+
+.arrow-down {
+  width: 30px;
+  animation: 2s ease-out 0s infinite arrow700;
+}
+
 header h1 {
   font-size: 50px;
 }

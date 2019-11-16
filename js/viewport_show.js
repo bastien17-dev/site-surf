@@ -1,4 +1,5 @@
 var elementsMove = document.querySelectorAll(".element_move");
+var arrowDown = document.querySelector(".arrow-down");
 
 function revealElement() {
   for (var element of elementsMove) {
@@ -9,6 +10,13 @@ function revealElement() {
   }
 }
 
+function removeArrow() {
+  if (window.scrollY > arrowDown.offsetTop + 100) {
+    arrowDown.classList.add("move");
+  }
+}
+
 window.addEventListener("scroll", function() {
   revealElement();
+  removeArrow();
 });

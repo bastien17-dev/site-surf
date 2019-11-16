@@ -21,6 +21,21 @@
   font-style: normal;
 }
 
+/* KEYFRAMES */
+
+@keyframes arrow {
+  from {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(80px);
+    opacity: 1;
+  }
+}
+
+/* BODY */
+
 body {
   background-image: url(../images/StockSnap_E2ZN81PY86_light.jpg);
   background-repeat: no-repeat;
@@ -53,6 +68,22 @@ h3 {
   text-decoration: underline;
   margin-bottom: 5px;
 }
+
+/* ARROW DOWN*/
+
+.arrow-down {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  width: 20px;
+  opacity: 0;
+  animation: 1.5s ease-out 1s infinite arrow;
+}
+
+.arrow-down.move {
+  display: none;
+}
+
 /* MENU HAMBURGER */
 
 .logo {
