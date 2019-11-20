@@ -174,19 +174,19 @@ h3 {
   font-size: 1.2em;
 }
 
-.activated .side_bar {
+.is-activated .side_bar {
   transform: translateX(0);
 }
 
-.activated .button_hamburger {
+.is-activated .button_hamburger {
   visibility: hidden;
 }
 
-.activated .button_cross {
+.is-activated .button_cross {
   visibility: visible;
 }
 
-.activated .overlay {
+.is-activated .overlay {
   visibility: visible;
 }
 /* ABOUT */
@@ -203,12 +203,12 @@ h3 {
 }
 
 .about_title {
-  transform: translateY(60%);
+  transform: translateY(50%);
   opacity: 0;
   transition: transform 1s ease, opacity 1s ease;
 }
 
-.about_title.appear {
+.about_title.is-appear {
   transform: none;
   opacity: 1;
 }
@@ -218,12 +218,12 @@ h3 {
   text-align: justify;
   padding-top: 20px;
   line-height: 30px;
-  transform: translateY(10%);
+  transform: translateY(50px);
   opacity: 0;
-  transition: transform 1s ease 0.2s, opacity 1s ease 0.1s;
+  transition: transform 1s ease, opacity 1s ease 0.1s;
 }
 
-.about_p.appear {
+.about_p.is-appear {
   transform: none;
   opacity: 1;
 }
@@ -238,12 +238,12 @@ h3 {
   border: 1px solid #f4c5b0;
   border-radius: 5px;
   background-color: #f4c5b0;
-  transform: translateX(-60%);
   opacity: 0;
-  transition: transform 1s ease, opacity 1s ease;
+  transform: scale(0);
+  transition: opacity 0.5s, transform 0.5s;
 }
 
-.separation.appear {
+.separation.is-appear {
   transform: none;
   opacity: 1;
 }
@@ -258,6 +258,9 @@ h3 {
   background-color: #e0d9d7;
   margin-bottom: 10%;
   padding: 40px 0;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 1s, opacity 1s;
 }
 
 .school_team h2 {
@@ -317,16 +320,99 @@ h3 {
   text-align: center;
 }
 
-.school_team {
-  transform: translateY(150px);
-  opacity: 0;
-  transition-duration: 1s;
-  transition-delay: 0.3s;
-}
-
-.school_team.appear {
+.school_team.is-appear {
   transform: none;
   opacity: 1;
+}
+
+/* FORMULAIRE */
+.formulaire {
+  font-weight: bolder;
+  margin: 0 10px 10% 10px;
+  display: flex;
+  justify-content: center;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: opacity 1s, transform 1s;
+}
+
+.formulaire.is-appear {
+  opacity: 1;
+  transform: none;
+}
+
+.formulaire h2 {
+  margin-bottom: 30px;
+}
+
+form {
+  width: 70%;
+  max-width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+}
+
+form div {
+  display: flex;
+  align-items: center;
+}
+
+input {
+  border-radius: 5px;
+  border: 1px solid grey;
+  height: 25px;
+}
+
+.div-input {
+  justify-content: space-between;
+}
+
+.div-input input {
+  width: 60%;
+}
+
+.div-date {
+  justify-content: space-around;
+}
+
+.div-date input {
+  width: 40%;
+}
+
+.div-select {
+  justify-content: center;
+}
+
+select {
+  width: 70%;
+  height: 30px;
+}
+
+.div-radio {
+  justify-content: space-between;
+}
+
+.div-textarea {
+  justify-content: space-between;
+}
+
+textarea {
+  width: 50%;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+input[type="submit"] {
+  width: 100%;
+  height: 30px;
+  background-color: #0069d9;
+  color: white;
+  font-family: "Exo", sans-serif;
+  font-weight: bolder;
+  font-size: 1.2em;
 }
 
 /* FOOTER */
@@ -343,7 +429,7 @@ h3 {
   transition-duration: 1s;
 }
 
-.footer.appear {
+.footer.is-appear {
   opacity: 1;
 }
 

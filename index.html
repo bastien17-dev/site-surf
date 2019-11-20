@@ -32,7 +32,7 @@
           <ul class="menu_list">
             <li><a href="#about" class="close_menu">A propos</a></li>
             <li><a href="#team" class="close_menu">La team</a></li>
-            <li><a href="#" class="close_menu">Reserver</a></li>
+            <li><a href="#reservation" class="close_menu">Reserver</a></li>
             <li><a href="#" class="close_menu">Contacts</a></li>
             <li><a href="#" class="close_menu">Shop</a></li>
           </ul>
@@ -147,6 +147,72 @@
             Tom<br />Responsable bar et animations
           </figcaption>
         </figure>
+      </section>
+
+      <hr class="separation element_move" />
+
+      <section class="formulaire element_move">
+        <div class="form-illustration"></div>
+        <form id="reservation">
+          <h2>Réservez</h2>
+          <div class="div-input">
+            <label for="name">Votre nom</label>
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Baptiste Durant"
+              required
+            />
+          </div>
+          <div class="div-input">
+            <label for="mail">Votre E-mail</label>
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="baptistedurant@gnagna.gna"
+              required
+            />
+          </div>
+          <div class="div-date">
+            <label for="date">Debut souhaité</label>
+            <input type="date" id="date" name="date" required />
+          </div>
+          <div class="div-select">
+            <select name="formule" required>
+              <option value="">Formule</option
+              ><option> </option
+              ><option value="2J">1 jour</option>
+              <option value="3J">2 jours</option>
+              <option value="1S">1 semaine</option>
+              <option value="2s">2 semaines</option>
+            </select>
+          </div>
+          <div class="div-radio">
+            <input
+              type="radio"
+              name="hebergement"
+              id="avec-hebergement"
+              value="avec-hebergement"
+            />
+            <label for="avec-hebergement">Avec hébergement</label>
+            <input
+              type="radio"
+              name="hebergement"
+              id="sans-hebergement"
+              value="sans-hebergement"
+            />
+            <label for="sans-hebergement">Sans hébergement</label>
+          </div>
+          <div class="div-textarea">
+            <label for="message">Demande spécifique</label><br />
+            <textarea rows="4" placeholder="Tapez votre texte.."></textarea>
+          </div>
+          <div>
+            <input type="submit" value="Envoyer la demande" />
+          </div>
+        </form>
       </section>
 
       <footer class="element_move footer">

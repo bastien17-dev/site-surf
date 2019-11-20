@@ -8,11 +8,11 @@ sideBar.innerHTML = menuElt.innerHTML;
 
 buttonHamburger.addEventListener("click", function(e) {
   e.preventDefault();
-  hamburgerMenu.classList.add("activated");
+  hamburgerMenu.classList.add("is-activated");
 });
 
 for (var element of buttonClose) {
   element.addEventListener("click", function(e) {
-    hamburgerMenu.classList.remove("activated");
+    hamburgerMenu.classList.remove("is-activated");
   });
 }

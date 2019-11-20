@@ -91,7 +91,7 @@ h2 {
   transition: transform 1s ease, opacity 1s ease;
 }
 
-.about_illustration.appear {
+.about_illustration.is-appear {
   transform: none;
   opacity: 1;
 }
@@ -106,4 +106,12 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 100px 1fr 1fr 1fr;
   grid-template-areas: "h2 h2 h2" "bast kelly laird" "surfeuse jerem mj" "tony tom .";
+}
+
+/*FORM*/
+
+form {
+  background-color: rgba(230, 230, 230, 0.7);
+  padding: 40px;
+  border-radius: 5px;
 }

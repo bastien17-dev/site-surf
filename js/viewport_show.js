@@ -2,12 +2,12 @@ var elementsMove = document.querySelectorAll(".element_move");
 var arrowDown = document.querySelector(".arrow-down");
 
 function revealElement() {
-  for (var element of elementsMove) {
-    var scrollPosition = window.innerHeight + window.scrollY;
+  elementsMove.forEach(function(element) {
+    let scrollPosition = window.innerHeight + window.scrollY;
     if (scrollPosition > element.offsetTop + 200) {
-      element.classList.add("appear");
+      element.classList.add("is-appear");
     }
-  }
+  });
 }
 
 function removeArrow() {

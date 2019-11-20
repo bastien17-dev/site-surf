@@ -36,3 +36,13 @@
   grid-area: i;
   align-self: end;
 }
+
+/*FORM*/
+
+.formulaire {
+  background-image: url(../images/resa.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 700px;
+  align-items: center;
+}
