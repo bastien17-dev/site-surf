@@ -27,7 +27,6 @@
   <body>
     <main>
       <header>
-        <img class="arrow-down" src="images/35442.png" />
         <nav class="menu">
           <ul class="menu_list">
             <li><a href="#about" class="close_menu">A propos</a></li>
@@ -53,8 +52,13 @@
             />
           </div>
         </div>
-        <h1>Just Surf.</h1>
         <img src="images/surf-school-bluewaves.png" alt="logo" class="logo" />
+        <img
+          class="header-background"
+          src="images/StockSnap_E2ZN81PY86 copie-min.jpg"
+        />
+
+        <h1>Just Surf.</h1>
       </header>
 
       <section class="about" id="about">
@@ -71,10 +75,38 @@
         </p>
 
         <div class="about_illustration element_move">
+          <div class="previous">
+            <img src="images/prev.png" />
+          </div>
+
+          <div class="next">
+            <img src="images/next.png" />
+          </div>
+
+          <img src="images/Caroussel/picture.jpg" class="about_image" />
           <img
-            src="images/StockSnap_R92M1QI89F.jpg"
-            alt="surf-lesson"
-            class="about_image"
+            src="images/Caroussel/picture1.jpg"
+            class="about_image is-hidden"
+          />
+          <img
+            src="images/Caroussel/picture2.jpg"
+            class="about_image is-hidden"
+          />
+          <img
+            src="images/Caroussel/picture3.jpg"
+            class="about_image is-hidden"
+          />
+          <img
+            src="images/Caroussel/picture4.jpg"
+            class="about_image is-hidden"
+          />
+          <img
+            src="images/Caroussel/picture5.jpg"
+            class="about_image is-hidden"
+          />
+          <img
+            src="images/Caroussel/picture6.jpg"
+            class="about_image is-hidden"
           />
         </div>
       </section>
@@ -151,36 +183,47 @@
 
       <hr class="separation element_move" />
 
-      <section class="formulaire element_move">
+      <section class="formulaire element_move" id="reservation">
         <div class="form-illustration"></div>
-        <form id="reservation">
+
+        <form>
           <h2>Réservez</h2>
+
           <div class="div-input">
             <label for="name">Votre nom</label>
             <input
+              class="blur-verif"
               type="text"
               name="name"
               id="name"
-              placeholder="Baptiste Durant"
               required
             />
           </div>
+
           <div class="div-input">
             <label for="mail">Votre E-mail</label>
             <input
+              class="key-verif"
               type="email"
               name="mail"
               id="mail"
-              placeholder="baptistedurant@gnagna.gna"
               required
             />
           </div>
+
           <div class="div-date">
             <label for="date">Debut souhaité</label>
-            <input type="date" id="date" name="date" required />
+            <input
+              class="blur-verif"
+              type="date"
+              id="date"
+              name="date"
+              required
+            />
           </div>
+
           <div class="div-select">
-            <select name="formule" required>
+            <select class="blur-verif" name="formule" required>
               <option value="">Formule</option
               ><option> </option
               ><option value="2J">1 jour</option>
@@ -207,7 +250,7 @@
           </div>
           <div class="div-textarea">
             <label for="message">Demande spécifique</label><br />
-            <textarea rows="4" placeholder="Tapez votre texte.."></textarea>
+            <textarea rows="4"></textarea>
           </div>
           <div>
             <input type="submit" value="Envoyer la demande" />
@@ -233,4 +276,6 @@
   </body>
   <script type="text/javascript" src="js/menu_hamburger.js"></script>
   <script type="text/javascript" src="js/viewport_show.js"></script>
+  <script type="text/javascript" src="js/form.js"></script>
+  <script type="text/javascript" src="js/caroussel.js"></script>
 </html>
