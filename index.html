@@ -184,54 +184,92 @@
       <hr class="separation element_move" />
 
       <section class="formulaire element_move" id="reservation">
-        <div class="form-illustration"></div>
+        <div class="form-overlay">
+          <p class="alert-ok">
+            <span>Votre demande a bien été prise en compte :)</span>
+          </p>
+          <p class="alert-wrong">
+            <span>Veuillez vérifier la bonne saisie de vos données</span>
+          </p>
+        </div>
 
         <form>
           <h2>Réservez</h2>
 
           <div class="div-input">
-            <label for="name">Votre nom</label>
+            <label for="name">Qui ?</label>
             <input
               class="blur-verif"
               type="text"
               name="name"
               id="name"
-              required
+              placeholder="Prenom Nom"
             />
+            <img
+              class="invalid-symbole symbole-name"
+              src="images/invalid-icone.png"
+            />
+            <img
+              class="valid-symbole symbole-name"
+              src="images/valid-icone.png"
+            />
+            <div class="help-text">
+              Veuillez entrer un nom de trois caractères minimum
+            </div>
           </div>
 
           <div class="div-input">
-            <label for="mail">Votre E-mail</label>
             <input
               class="key-verif"
               type="email"
               name="mail"
               id="mail"
-              required
+              placeholder="Adresse Mail"
             />
+            <img
+              class="invalid-symbole symbole-mail"
+              src="images/invalid-icone.png"
+            />
+            <img
+              class="valid-symbole symbole-mail"
+              src="images/valid-icone.png"
+            />
+            <div class="help-text">Veuillez entrez une adresse mail valide</div>
           </div>
 
           <div class="div-date">
             <label for="date">Debut souhaité</label>
-            <input
-              class="blur-verif"
-              type="date"
-              id="date"
-              name="date"
-              required
+            <input class="blur-verif" type="date" id="date" name="date" />
+            <div class="help-text">Veuillez choisir une date de début</div>
+            <img
+              class="invalid-symbole symbole-date"
+              src="images/invalid-icone.png"
+            />
+            <img
+              class="valid-symbole symbole-date"
+              src="images/valid-icone.png"
             />
           </div>
 
           <div class="div-select">
-            <select class="blur-verif" name="formule" required>
-              <option value="">Formule</option
-              ><option> </option
-              ><option value="2J">1 jour</option>
+            <select class="blur-verif" name="formule">
+              <option value="">Formule</option>
+              <option value="2J">1 jour</option>
               <option value="3J">2 jours</option>
               <option value="1S">1 semaine</option>
               <option value="2s">2 semaines</option>
             </select>
+            <img
+              class="invalid-symbole symbole-select"
+              src="images/invalid-icone.png"
+            />
+            <img
+              class="valid-symbole symbole-select"
+              src="images/valid-icone.png"
+            />
+            <div class="help-text">Veuillez choisir une formule</div>
           </div>
+
           <div class="div-radio">
             <input
               type="radio"
@@ -248,12 +286,14 @@
             />
             <label for="sans-hebergement">Sans hébergement</label>
           </div>
+
           <div class="div-textarea">
             <label for="message">Demande spécifique</label><br />
-            <textarea rows="4"></textarea>
+            <textarea rows="4" placeholder="Tapez vos demandes"></textarea>
           </div>
+
           <div>
-            <input type="submit" value="Envoyer la demande" />
+            <input id="submit" type="submit" value="Envoyer la demande" />
           </div>
         </form>
       </section>

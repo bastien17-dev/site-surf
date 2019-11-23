@@ -95,6 +95,7 @@ h2 {
   width: 10%;
   height: 100%;
   left: 0;
+  border-radius: 0 100% 100% 0;
 }
 
 .next {
@@ -102,24 +103,40 @@ h2 {
   width: 10%;
   height: 100%;
   right: 0;
+  border-radius: 100% 0 0 100%;
 }
 
 .next img {
+  position: relative;
   width: 80%;
-  margin-top: 200%;
+  top: 40%;
+  opacity: 0;
+  transition: opacity 0.4s;
 }
 
 .previous img {
+  position: relative;
   width: 80%;
-  margin-top: 200%;
+  top: 40%;
+  opacity: 0;
+  transition: opacity 0.4s;
 }
 
 .previous:hover {
   cursor: pointer;
+  background-color: rgba(225, 225, 225, 0.5);
 }
 
 .next:hover {
   cursor: pointer;
+  background-color: rgba(225, 225, 225, 0.5);
+}
+
+.previous:hover img {
+  opacity: 1;
+}
+.next:hover img {
+  opacity: 1;
 }
 
 /* TEAM */
@@ -136,8 +153,4 @@ form {
   background-color: rgba(230, 230, 230, 0.7);
   padding: 40px;
   border-radius: 5px;
-}
-
-.div-input {
-  flex-direction: row;
 }
