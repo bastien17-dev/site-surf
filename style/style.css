@@ -381,6 +381,7 @@ form {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 form div {
@@ -458,7 +459,8 @@ input[type="submit"]:hover {
 }
 
 .help-text {
-  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-30px);
   background-color: #f8d7da;
   border: 1px solid red;
   color: red;
@@ -469,6 +471,7 @@ input[type="submit"]:hover {
   padding-top: 7px;
   padding-bottom: 7px;
   font-size: 0.8em;
+  transition: opacity 0.5s, transform 0.5s;
 }
 
 .invalid-symbole {
@@ -507,7 +510,8 @@ input[type="submit"]:hover {
 }
 
 .is-valid .help-text {
-  visibility: hidden;
+  opacity: 0;
+  transform: translateX(-30px);
 }
 
 .is-valid .valid-symbole {
@@ -519,7 +523,8 @@ input[type="submit"]:hover {
 }
 
 .is-not-valid .help-text {
-  visibility: visible;
+  opacity: 1;
+  transform: none;
 }
 
 .is-not-valid .invalid-symbole {
